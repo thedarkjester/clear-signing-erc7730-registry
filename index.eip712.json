@@ -2451,6 +2451,16 @@
       }
     ]
   },
+  "eip155:1:0x892bb7eed71efb060ab90140e7825d8127991dd3": {
+    "SafeTx": [
+      {
+        "path": "registry/linea/eip712-LineaSafe.json",
+        "encodeTypeHashes": [
+          "0xbb8310d486368db6bd6f849402fdd73ad53d316b5a4b2644ad6efe0f941286d8"
+        ]
+      }
+    ]
+  },
   "eip155:1:0x9757f2d2b135150bbeb65308d4a91804107cd8d6": {
     "Order": [
       {
@@ -2513,6 +2523,16 @@
         "path": "registry/rarible/eip712-rarible-erc-1155.json",
         "encodeTypeHashes": [
           "0xfb988707ebb338694f318760b0fd5cfe756d00a2ade251fda110b80c336a3c7f"
+        ]
+      }
+    ]
+  },
+  "eip155:1:0xb8f5524d73f549cf14a0587a3c7810723f9c0051": {
+    "SafeTx": [
+      {
+        "path": "registry/linea/eip712-LineaSafe.json",
+        "encodeTypeHashes": [
+          "0xbb8310d486368db6bd6f849402fdd73ad53d316b5a4b2644ad6efe0f941286d8"
         ]
       }
     ]
