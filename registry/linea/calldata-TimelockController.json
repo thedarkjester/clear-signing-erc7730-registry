@@ -3,21 +3,10 @@
   "context": {
     "$id": "LineaTimelockController",
     "contract": {
-      "deployments": [
-        {
-          "chainId": 1,
-          "address": "0xd6B95c960779c72B8C6752119849318E5d550574"
-        }
-      ],
+      "deployments": [{ "chainId": 1, "address": "0xd6B95c960779c72B8C6752119849318E5d550574" }],
       "abi": [
         {
-          "inputs": [
-            {
-              "internalType": "bytes32",
-              "name": "id",
-              "type": "bytes32"
-            }
-          ],
+          "inputs": [{ "internalType": "bytes32", "name": "id", "type": "bytes32" }],
           "name": "cancel",
           "outputs": [],
           "stateMutability": "nonpayable",
@@ -25,31 +14,11 @@
         },
         {
           "inputs": [
-            {
-              "internalType": "address",
-              "name": "target",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "value",
-              "type": "uint256"
-            },
-            {
-              "internalType": "bytes",
-              "name": "payload",
-              "type": "bytes"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "predecessor",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "salt",
-              "type": "bytes32"
-            }
+            { "internalType": "address", "name": "target", "type": "address" },
+            { "internalType": "uint256", "name": "value", "type": "uint256" },
+            { "internalType": "bytes", "name": "payload", "type": "bytes" },
+            { "internalType": "bytes32", "name": "predecessor", "type": "bytes32" },
+            { "internalType": "bytes32", "name": "salt", "type": "bytes32" }
           ],
           "name": "execute",
           "outputs": [],
@@ -58,31 +27,11 @@
         },
         {
           "inputs": [
-            {
-              "internalType": "address[]",
-              "name": "targets",
-              "type": "address[]"
-            },
-            {
-              "internalType": "uint256[]",
-              "name": "values",
-              "type": "uint256[]"
-            },
-            {
-              "internalType": "bytes[]",
-              "name": "payloads",
-              "type": "bytes[]"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "predecessor",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "salt",
-              "type": "bytes32"
-            }
+            { "internalType": "address[]", "name": "targets", "type": "address[]" },
+            { "internalType": "uint256[]", "name": "values", "type": "uint256[]" },
+            { "internalType": "bytes[]", "name": "payloads", "type": "bytes[]" },
+            { "internalType": "bytes32", "name": "predecessor", "type": "bytes32" },
+            { "internalType": "bytes32", "name": "salt", "type": "bytes32" }
           ],
           "name": "executeBatch",
           "outputs": [],
@@ -91,16 +40,8 @@
         },
         {
           "inputs": [
-            {
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            }
+            { "internalType": "bytes32", "name": "role", "type": "bytes32" },
+            { "internalType": "address", "name": "account", "type": "address" }
           ],
           "name": "grantRole",
           "outputs": [],
@@ -109,128 +50,46 @@
         },
         {
           "inputs": [
-            {
-              "internalType": "address",
-              "name": "",
-              "type": "address"
-            },
-            {
-              "internalType": "address",
-              "name": "",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256[]",
-              "name": "",
-              "type": "uint256[]"
-            },
-            {
-              "internalType": "uint256[]",
-              "name": "",
-              "type": "uint256[]"
-            },
-            {
-              "internalType": "bytes",
-              "name": "",
-              "type": "bytes"
-            }
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "uint256[]", "name": "", "type": "uint256[]" },
+            { "internalType": "uint256[]", "name": "", "type": "uint256[]" },
+            { "internalType": "bytes", "name": "", "type": "bytes" }
           ],
           "name": "onERC1155BatchReceived",
-          "outputs": [
-            {
-              "internalType": "bytes4",
-              "name": "",
-              "type": "bytes4"
-            }
-          ],
+          "outputs": [{ "internalType": "bytes4", "name": "", "type": "bytes4" }],
           "stateMutability": "nonpayable",
           "type": "function"
         },
         {
           "inputs": [
-            {
-              "internalType": "address",
-              "name": "",
-              "type": "address"
-            },
-            {
-              "internalType": "address",
-              "name": "",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            },
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            },
-            {
-              "internalType": "bytes",
-              "name": "",
-              "type": "bytes"
-            }
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "uint256", "name": "", "type": "uint256" },
+            { "internalType": "uint256", "name": "", "type": "uint256" },
+            { "internalType": "bytes", "name": "", "type": "bytes" }
           ],
           "name": "onERC1155Received",
-          "outputs": [
-            {
-              "internalType": "bytes4",
-              "name": "",
-              "type": "bytes4"
-            }
-          ],
+          "outputs": [{ "internalType": "bytes4", "name": "", "type": "bytes4" }],
           "stateMutability": "nonpayable",
           "type": "function"
         },
         {
           "inputs": [
-            {
-              "internalType": "address",
-              "name": "",
-              "type": "address"
-            },
-            {
-              "internalType": "address",
-              "name": "",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            },
-            {
-              "internalType": "bytes",
-              "name": "",
-              "type": "bytes"
-            }
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "address", "name": "", "type": "address" },
+            { "internalType": "uint256", "name": "", "type": "uint256" },
+            { "internalType": "bytes", "name": "", "type": "bytes" }
           ],
           "name": "onERC721Received",
-          "outputs": [
-            {
-              "internalType": "bytes4",
-              "name": "",
-              "type": "bytes4"
-            }
-          ],
+          "outputs": [{ "internalType": "bytes4", "name": "", "type": "bytes4" }],
           "stateMutability": "nonpayable",
           "type": "function"
         },
         {
           "inputs": [
-            {
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            }
+            { "internalType": "bytes32", "name": "role", "type": "bytes32" },
+            { "internalType": "address", "name": "account", "type": "address" }
           ],
           "name": "renounceRole",
           "outputs": [],
@@ -239,16 +98,8 @@
         },
         {
           "inputs": [
-            {
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            }
+            { "internalType": "bytes32", "name": "role", "type": "bytes32" },
+            { "internalType": "address", "name": "account", "type": "address" }
           ],
           "name": "revokeRole",
           "outputs": [],
@@ -257,36 +108,12 @@
         },
         {
           "inputs": [
-            {
-              "internalType": "address",
-              "name": "target",
-              "type": "address"
-            },
-            {
-              "internalType": "uint256",
-              "name": "value",
-              "type": "uint256"
-            },
-            {
-              "internalType": "bytes",
-              "name": "data",
-              "type": "bytes"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "predecessor",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "salt",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "uint256",
-              "name": "delay",
-              "type": "uint256"
-            }
+            { "internalType": "address", "name": "target", "type": "address" },
+            { "internalType": "uint256", "name": "value", "type": "uint256" },
+            { "internalType": "bytes", "name": "data", "type": "bytes" },
+            { "internalType": "bytes32", "name": "predecessor", "type": "bytes32" },
+            { "internalType": "bytes32", "name": "salt", "type": "bytes32" },
+            { "internalType": "uint256", "name": "delay", "type": "uint256" }
           ],
           "name": "schedule",
           "outputs": [],
@@ -295,36 +122,12 @@
         },
         {
           "inputs": [
-            {
-              "internalType": "address[]",
-              "name": "targets",
-              "type": "address[]"
-            },
-            {
-              "internalType": "uint256[]",
-              "name": "values",
-              "type": "uint256[]"
-            },
-            {
-              "internalType": "bytes[]",
-              "name": "payloads",
-              "type": "bytes[]"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "predecessor",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "bytes32",
-              "name": "salt",
-              "type": "bytes32"
-            },
-            {
-              "internalType": "uint256",
-              "name": "delay",
-              "type": "uint256"
-            }
+            { "internalType": "address[]", "name": "targets", "type": "address[]" },
+            { "internalType": "uint256[]", "name": "values", "type": "uint256[]" },
+            { "internalType": "bytes[]", "name": "payloads", "type": "bytes[]" },
+            { "internalType": "bytes32", "name": "predecessor", "type": "bytes32" },
+            { "internalType": "bytes32", "name": "salt", "type": "bytes32" },
+            { "internalType": "uint256", "name": "delay", "type": "uint256" }
           ],
           "name": "scheduleBatch",
           "outputs": [],
@@ -332,13 +135,7 @@
           "type": "function"
         },
         {
-          "inputs": [
-            {
-              "internalType": "uint256",
-              "name": "newDelay",
-              "type": "uint256"
-            }
-          ],
+          "inputs": [{ "internalType": "uint256", "name": "newDelay", "type": "uint256" }],
           "name": "updateDelay",
           "outputs": [],
           "stateMutability": "nonpayable",
@@ -347,13 +144,7 @@
       ]
     }
   },
-  "metadata": {
-    "owner": "Linea",
-    "info": {
-      "url": "https://linea.build",
-      "legalName": "Linea"
-    }
-  },
+  "metadata": { "owner": "Linea", "info": { "url": "https://linea.build", "legalName": "Linea" } },
   "display": {
     "definitions": {
       "addressNameTarget": {
@@ -371,50 +162,24 @@
       "cancel(bytes32 id)": {
         "$id": "cancel",
         "intent": "Cancel timelock operation",
-        "fields": [
-          {
-            "path": "id",
-            "label": "Operation ID",
-            "format": "raw"
-          }
-        ]
+        "fields": [{ "path": "id", "label": "Operation ID", "format": "raw" }]
       },
       "execute(address target, uint256 value, bytes payload, bytes32 predecessor, bytes32 salt)": {
         "$id": "execute",
         "intent": "Execute timelock operation",
         "fields": [
           { "path": "target", "$ref": "$.display.definitions.addressNameTarget" },
-          {
-            "path": "value",
-            "label": "Value",
-            "format": "amount"
-          },
+          { "path": "value", "label": "Value", "format": "amount" },
           {
             "path": "payload",
             "label": "Transaction",
             "format": "calldata",
-            "params": {
-              "calleePath": "target",
-              "amountPath": "value",
-              "spenderPath": "@.to"
-            }
+            "params": { "calleePath": "target", "amountPath": "value", "spenderPath": "@.to" }
           },
           { "path": "payload.[]", "label": "Payload", "format": "raw", "visible": "never" },
-          {
-            "path": "predecessor",
-            "label": "Predecessor",
-            "format": "raw"
-          },
-          {
-            "path": "salt",
-            "label": "Salt",
-            "format": "raw"
-          },
-          {
-            "path": "@.value",
-            "label": "ETH sent",
-            "format": "amount"
-          }
+          { "path": "predecessor", "label": "Predecessor", "format": "raw" },
+          { "path": "salt", "label": "Salt", "format": "raw" },
+          { "path": "@.value", "label": "ETH sent", "format": "amount" }
         ]
       },
       "executeBatch(address[] targets, uint256[] values, bytes[] payloads, bytes32 predecessor, bytes32 salt)": {
@@ -422,47 +187,23 @@
         "intent": "Execute timelock batch",
         "fields": [
           { "path": "targets.[]", "$ref": "$.display.definitions.addressNameTarget" },
-          {
-            "path": "values.[]",
-            "label": "Value",
-            "format": "amount"
-          },
+          { "path": "values.[]", "label": "Value", "format": "amount" },
           {
             "path": "payloads.[]",
             "label": "Transaction",
             "format": "calldata",
-            "params": {
-              "calleePath": "targets.[]",
-              "amountPath": "values.[]",
-              "spenderPath": "@.to"
-            }
+            "params": { "calleePath": "targets.[]", "amountPath": "values.[]", "spenderPath": "@.to" }
           },
-          {
-            "path": "predecessor",
-            "label": "Predecessor",
-            "format": "raw"
-          },
-          {
-            "path": "salt",
-            "label": "Salt",
-            "format": "raw"
-          },
-          {
-            "path": "@.value",
-            "label": "ETH sent",
-            "format": "amount"
-          }
+          { "path": "predecessor", "label": "Predecessor", "format": "raw" },
+          { "path": "salt", "label": "Salt", "format": "raw" },
+          { "path": "@.value", "label": "ETH sent", "format": "amount" }
         ]
       },
       "grantRole(bytes32 role, address account)": {
         "$id": "grantRole",
         "intent": "Grant Role",
         "fields": [
-          {
-            "path": "role",
-            "label": "Role",
-            "format": "raw"
-          },
+          { "path": "role", "label": "Role", "format": "raw" },
           { "path": "account", "$ref": "$.display.definitions.addressNameAccount" }
         ]
       },
@@ -470,11 +211,7 @@
         "$id": "revokeRole",
         "intent": "Revoke Role",
         "fields": [
-          {
-            "path": "role",
-            "label": "Role",
-            "format": "raw"
-          },
+          { "path": "role", "label": "Role", "format": "raw" },
           { "path": "account", "$ref": "$.display.definitions.addressNameAccount" }
         ]
       },
@@ -482,11 +219,7 @@
         "$id": "renounceRole",
         "intent": "Renounce Role",
         "fields": [
-          {
-            "path": "role",
-            "label": "Role",
-            "format": "raw"
-          },
+          { "path": "role", "label": "Role", "format": "raw" },
           { "path": "account", "$ref": "$.display.definitions.addressNameAccount" }
         ]
       },
@@ -495,37 +228,17 @@
         "intent": "Schedule timelock operation",
         "fields": [
           { "path": "target", "$ref": "$.display.definitions.addressNameTarget" },
-          {
-            "path": "value",
-            "label": "Value",
-            "format": "amount"
-          },
+          { "path": "value", "label": "Value", "format": "amount" },
           {
             "path": "data",
             "label": "Transaction",
             "format": "calldata",
-            "params": {
-              "calleePath": "target",
-              "amountPath": "value",
-              "spenderPath": "@.to"
-            }
+            "params": { "calleePath": "target", "amountPath": "value", "spenderPath": "@.to" }
           },
           { "path": "data.[]", "label": "Data", "format": "raw", "visible": "never" },
-          {
-            "path": "predecessor",
-            "label": "Predecessor",
-            "format": "raw"
-          },
-          {
-            "path": "salt",
-            "label": "Salt",
-            "format": "raw"
-          },
-          {
-            "path": "delay",
-            "label": "Delay",
-            "format": "duration"
-          }
+          { "path": "predecessor", "label": "Predecessor", "format": "raw" },
+          { "path": "salt", "label": "Salt", "format": "raw" },
+          { "path": "delay", "label": "Delay", "format": "duration" }
         ]
       },
       "scheduleBatch(address[] targets, uint256[] values, bytes[] payloads, bytes32 predecessor, bytes32 salt, uint256 delay)": {
@@ -533,48 +246,22 @@
         "intent": "Schedule timelock batch",
         "fields": [
           { "path": "targets.[]", "$ref": "$.display.definitions.addressNameTarget" },
-          {
-            "path": "values.[]",
-            "label": "Value",
-            "format": "amount"
-          },
+          { "path": "values.[]", "label": "Value", "format": "amount" },
           {
             "path": "payloads.[]",
             "label": "Transaction",
             "format": "calldata",
-            "params": {
-              "calleePath": "targets.[]",
-              "amountPath": "values.[]",
-              "spenderPath": "@.to"
-            }
+            "params": { "calleePath": "targets.[]", "amountPath": "values.[]", "spenderPath": "@.to" }
           },
-          {
-            "path": "predecessor",
-            "label": "Predecessor",
-            "format": "raw"
-          },
-          {
-            "path": "salt",
-            "label": "Salt",
-            "format": "raw"
-          },
-          {
-            "path": "delay",
-            "label": "Delay",
-            "format": "duration"
-          }
+          { "path": "predecessor", "label": "Predecessor", "format": "raw" },
+          { "path": "salt", "label": "Salt", "format": "raw" },
+          { "path": "delay", "label": "Delay", "format": "duration" }
         ]
       },
       "updateDelay(uint256 newDelay)": {
         "$id": "updateDelay",
         "intent": "Update min delay",
-        "fields": [
-          {
-            "path": "newDelay",
-            "label": "New delay",
-            "format": "duration"
-          }
-        ]
+        "fields": [{ "path": "newDelay", "label": "New delay", "format": "duration" }]
       }
     }
   }
