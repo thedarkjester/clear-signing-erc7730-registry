@@ -82,13 +82,7 @@
           "outputs": [],
           "stateMutability": "nonpayable"
         },
-        {
-          "type": "function",
-          "name": "fund",
-          "inputs": [],
-          "outputs": [],
-          "stateMutability": "payable"
-        },
+        { "type": "function", "name": "fund", "inputs": [], "outputs": [], "stateMutability": "payable" },
         {
           "type": "function",
           "name": "pauseByType",
@@ -185,13 +179,7 @@
           "outputs": [],
           "stateMutability": "nonpayable"
         },
-        {
-          "type": "function",
-          "name": "resetAmountUsedInPeriod",
-          "inputs": [],
-          "outputs": [],
-          "stateMutability": "nonpayable"
-        },
+        { "type": "function", "name": "resetAmountUsedInPeriod", "inputs": [], "outputs": [], "stateMutability": "nonpayable" },
         {
           "type": "function",
           "name": "transferFundsForNativeYield",
@@ -265,26 +253,10 @@
         "format": "addressName",
         "params": { "types": ["eoa", "wallet", "contract"], "sources": ["local", "ens"] }
       },
-      "addressNameFeeRecipient": {
-        "label": "Fee Recipient",
-        "format": "addressName",
-        "params": { "types": ["eoa", "wallet"], "sources": ["local", "ens"] }
-      },
-      "addressNameYieldProvider": {
-        "label": "Yield Provider",
-        "format": "addressName",
-        "params": { "types": ["contract"], "sources": ["local"] }
-      },
-      "addressNameVerifierAddress": {
-        "label": "Verifier Address",
-        "format": "addressName",
-        "params": { "types": ["contract"], "sources": ["local"] }
-      },
-      "addressNameYieldManager": {
-        "label": "Yield Manager",
-        "format": "addressName",
-        "params": { "types": ["contract"], "sources": ["local"] }
-      }
+      "addressNameFeeRecipient": { "label": "Fee Recipient", "format": "addressName", "params": { "types": ["eoa", "wallet"], "sources": ["local", "ens"] } },
+      "addressNameYieldProvider": { "label": "Yield Provider", "format": "addressName", "params": { "types": ["contract"], "sources": ["local"] } },
+      "addressNameVerifierAddress": { "label": "Verifier Address", "format": "addressName", "params": { "types": ["contract"], "sources": ["local"] } },
+      "addressNameYieldManager": { "label": "Yield Manager", "format": "addressName", "params": { "types": ["contract"], "sources": ["local"] } }
     },
     "formats": {
       "sendMessage(address _to, uint256 _fee, bytes _calldata)": {
@@ -347,36 +319,16 @@
           { "path": "_params.data.[]", "label": "Data", "format": "raw", "visible": "never" }
         ]
       },
-      "fund()": {
-        "$id": "fund",
-        "intent": "Fund",
-        "fields": [
-          { "path": "@.value", "label": "Amount", "format": "amount" }
-        ]
-      },
+      "fund()": { "$id": "fund", "intent": "Fund", "fields": [{ "path": "@.value", "label": "Amount", "format": "amount" }] },
       "pauseByType(uint8 _pauseType)": {
         "$id": "pauseByType",
         "intent": "Pause",
-        "fields": [
-          {
-            "path": "_pauseType",
-            "label": "Pause Type",
-            "format": "enum",
-            "params": { "$ref": "$.metadata.enums.pauseType" }
-          }
-        ]
+        "fields": [{ "path": "_pauseType", "label": "Pause Type", "format": "enum", "params": { "$ref": "$.metadata.enums.pauseType" } }]
       },
       "unPauseByType(uint8 _pauseType)": {
         "$id": "unPauseByType",
         "intent": "Unpause",
-        "fields": [
-          {
-            "path": "_pauseType",
-            "label": "Pause Type",
-            "format": "enum",
-            "params": { "$ref": "$.metadata.enums.pauseType" }
-          }
-        ]
+        "fields": [{ "path": "_pauseType", "label": "Pause Type", "format": "enum", "params": { "$ref": "$.metadata.enums.pauseType" } }]
       },
       "setVerifierAddress(address _newVerifierAddress, uint256 _proofType)": {
         "$id": "setVerifierAddress",
@@ -389,9 +341,7 @@
       "resetRateLimitAmount(uint256 _amount)": {
         "$id": "resetRateLimitAmount",
         "intent": "Reset Rate Limit",
-        "fields": [
-          { "path": "_amount", "label": "New Limit", "format": "amount" }
-        ]
+        "fields": [{ "path": "_amount", "label": "New Limit", "format": "amount" }]
       },
       "grantRole(bytes32 role, address account)": {
         "$id": "grantRole",
@@ -423,27 +373,18 @@
         "fields": [
           { "path": "_messageNumber", "label": "Message Number", "format": "raw" },
           { "path": "_rollingHash", "label": "Rolling Hash", "format": "raw" },
-          {
-            "path": "_lastFinalizedTimestamp",
-            "label": "Last Finalized Time",
-            "format": "date",
-            "params": { "encoding": "timestamp" }
-          }
+          { "path": "_lastFinalizedTimestamp", "label": "Last Finalized Time", "format": "date", "params": { "encoding": "timestamp" } }
         ]
       },
       "unsetVerifierAddress(uint256 _proofType)": {
         "$id": "unsetVerifierAddress",
         "intent": "Unset Verifier",
-        "fields": [
-          { "path": "_proofType", "label": "Proof Type", "format": "raw" }
-        ]
+        "fields": [{ "path": "_proofType", "label": "Proof Type", "format": "raw" }]
       },
       "setYieldManager(address _newYieldManager)": {
         "$id": "setYieldManager",
         "intent": "Set Yield Manager",
-        "fields": [
-          { "path": "_newYieldManager", "$ref": "$.display.definitions.addressNameYieldManager" }
-        ]
+        "fields": [{ "path": "_newYieldManager", "$ref": "$.display.definitions.addressNameYieldManager" }]
       },
       "reportNativeYield(uint256 _amount, address _l2YieldRecipient)": {
         "$id": "reportNativeYield",
@@ -453,28 +394,17 @@
           { "path": "_l2YieldRecipient", "$ref": "$.display.definitions.addressNameL2YieldRecipient" }
         ]
       },
-      "resetAmountUsedInPeriod()": {
-        "$id": "resetAmountUsedInPeriod",
-        "intent": "Reset Period Usage",
-        "fields": []
-      },
+      "resetAmountUsedInPeriod()": { "$id": "resetAmountUsedInPeriod", "intent": "Reset Period Usage", "fields": [] },
       "transferFundsForNativeYield(uint256 _amount)": {
         "$id": "transferFundsForYield",
         "intent": "Transfer For Yield",
-        "fields": [
-          { "path": "_amount", "label": "Amount", "format": "amount" }
-        ]
+        "fields": [{ "path": "_amount", "label": "Amount", "format": "amount" }]
       },
       "updatePauseTypeRole(uint8 _pauseType, bytes32 _newRole)": {
         "$id": "updatePauseTypeRole",
         "intent": "Update Pause Role",
         "fields": [
-          {
-            "path": "_pauseType",
-            "label": "Pause Type",
-            "format": "enum",
-            "params": { "$ref": "$.metadata.enums.pauseType" }
-          },
+          { "path": "_pauseType", "label": "Pause Type", "format": "enum", "params": { "$ref": "$.metadata.enums.pauseType" } },
           { "path": "_newRole", "label": "New Role", "format": "raw" }
         ]
       },
@@ -482,12 +412,7 @@
         "$id": "updateUnpauseTypeRole",
         "intent": "Update Unpause Role",
         "fields": [
-          {
-            "path": "_pauseType",
-            "label": "Pause Type",
-            "format": "enum",
-            "params": { "$ref": "$.metadata.enums.pauseType" }
-          },
+          { "path": "_pauseType", "label": "Pause Type", "format": "enum", "params": { "$ref": "$.metadata.enums.pauseType" } },
           { "path": "_newRole", "label": "New Role", "format": "raw" }
         ]
       }

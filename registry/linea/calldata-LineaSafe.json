@@ -36,10 +36,7 @@
           "type": "function"
         },
         {
-          "inputs": [
-            { "name": "owner", "type": "address" },
-            { "name": "_threshold", "type": "uint256" }
-          ],
+          "inputs": [{ "name": "owner", "type": "address" }, { "name": "_threshold", "type": "uint256" }],
           "name": "addOwnerWithThreshold",
           "type": "function"
         },
@@ -61,16 +58,8 @@
           "name": "swapOwner",
           "type": "function"
         },
-        {
-          "inputs": [{ "name": "_threshold", "type": "uint256" }],
-          "name": "changeThreshold",
-          "type": "function"
-        },
-        {
-          "inputs": [{ "name": "hashToApprove", "type": "bytes32" }],
-          "name": "approveHash",
-          "type": "function"
-        }
+        { "inputs": [{ "name": "_threshold", "type": "uint256" }], "name": "changeThreshold", "type": "function" },
+        { "inputs": [{ "name": "hashToApprove", "type": "bytes32" }], "name": "approveHash", "type": "function" }
       ],
       "deployments": [
         { "chainId": 1, "address": "0x892bb7EeD71efB060ab90140e7825d8127991DD3" },

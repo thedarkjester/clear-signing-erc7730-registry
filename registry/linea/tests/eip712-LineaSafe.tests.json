@@ -5,10 +5,7 @@
       "description": "SafeTx -> LineaRollup.resetRateLimitAmount(30000000000000000000000)",
       "data": {
         "types": {
-          "EIP712Domain": [
-            { "name": "chainId", "type": "uint256" },
-            { "name": "verifyingContract", "type": "address" }
-          ],
+          "EIP712Domain": [{ "name": "chainId", "type": "uint256" }, { "name": "verifyingContract", "type": "address" }],
           "SafeTx": [
             { "name": "to", "type": "address" },
             { "name": "value", "type": "uint256" },
@@ -23,10 +20,7 @@
           ]
         },
         "primaryType": "SafeTx",
-        "domain": {
-          "chainId": 1,
-          "verifyingContract": "0x892bb7EeD71efB060ab90140e7825d8127991DD3"
-        },
+        "domain": { "chainId": 1, "verifyingContract": "0x892bb7EeD71efB060ab90140e7825d8127991DD3" },
         "message": {
           "to": "0xd19d4B5d358258f05D7B411E21A1460D11B0876F",
           "value": "0",
@@ -58,10 +52,7 @@
       "description": "SafeTx -> Timelock.execute -> LineaRollup.setVerifierAddress(0x41A4d93d09f4718fe899D12A4aD2C8a09104bdc7, 4)",
       "data": {
         "types": {
-          "EIP712Domain": [
-            { "name": "chainId", "type": "uint256" },
-            { "name": "verifyingContract", "type": "address" }
-          ],
+          "EIP712Domain": [{ "name": "chainId", "type": "uint256" }, { "name": "verifyingContract", "type": "address" }],
           "SafeTx": [
             { "name": "to", "type": "address" },
             { "name": "value", "type": "uint256" },
@@ -76,10 +67,7 @@
           ]
         },
         "primaryType": "SafeTx",
-        "domain": {
-          "chainId": 1,
-          "verifyingContract": "0x892bb7EeD71efB060ab90140e7825d8127991DD3"
-        },
+        "domain": { "chainId": 1, "verifyingContract": "0x892bb7EeD71efB060ab90140e7825d8127991DD3" },
         "message": {
           "to": "0xd6B95c960779c72B8C6752119849318E5d550574",
           "value": "0",
